@@ -27,7 +27,7 @@ const INTERESTS = [
 
 // Age ranges
 const AGE_RANGES = [
-  '16-18', '19-22', '23-26', '27-30', '31-35', '36-40', '40+'
+  '18-25', '26-35', '36-45', '46-55', '56+'
 ]
 
 // Languages
@@ -96,7 +96,7 @@ export default function InterestsSetupScreen() {
         language: selectedLanguages.length > 0 ? selectedLanguages : ['English'],
         interests: cleanInterests,
         age_range: selectedAgeRange || undefined,
-        gender: 'prefer_not_to_say', // Default for now
+        gender: 'prefer-not-to-say', // Default for now
         location: undefined, // Could add location picker later
       }
 
